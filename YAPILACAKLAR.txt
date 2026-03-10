@@ -1,0 +1,25 @@
+============================================
+  IntLimiter - Yapılacaklar (11.03.2026)
+============================================
+
+SORUN 1: Sistem Tepsisi Çalışmıyor
+-----------------------------------
+- X butonuna basınca uygulama tepsiye düşmüyor
+- Olası sebep: Window_Closing event'indeki e.Cancel + Hide() çalışmıyor
+- Çözüm: OnClosing override kullanmak veya event bağlantısını kontrol etmek
+
+SORUN 2: PC Download Limiti Çalışmıyor
+---------------------------------------
+- Speedtest'te hâlâ normal hız görünüyor
+- Temel sorun: Windows NetQoS sadece OUTBOUND (giden/upload) trafiği sınırlıyor
+- Gelen trafik (download) QoS ile sınırlanamıyor
+- Çözüm: WinDivert entegrasyonu yapılacak (NuGet: WinDivertSharp)
+  - Paket yakalayıp geciktirerek gerçek download limiting
+  - NetLimiter de benzer bir yöntem kullanıyor
+
+NOTLAR:
+- Uygulama açılıyor ve çalışıyor (crash düzeltildi)
+- Win11 koyu tema ve sidebar tasarımı tamam
+- Hız titremesi düzeltildi (smoothing algorithm)
+- ComboBox koyu tema tamam
+- README.md hazır

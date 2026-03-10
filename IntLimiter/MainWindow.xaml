@@ -5,7 +5,10 @@
         Title="IntLimiter"
         Width="1100" Height="720"
         MinWidth="900" MinHeight="500"
-        Style="{StaticResource Win11Window}"
+        Background="#FF1C1C1C"
+        Foreground="White"
+        FontFamily="Segoe UI Variable, Segoe UI"
+        FontSize="13"
         WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded"
         Closing="Window_Closing">

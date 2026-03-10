@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntLimiter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43292768c06952114313b9119958d0663547214f")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntLimiter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntLimiter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
