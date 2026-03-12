@@ -1,0 +1,449 @@
+You are acting as a principal Windows desktop engineer, systems engineer, network engineer, release engineer, installer engineer, and UI engineer.
+
+You will fully design, implement, test, package, and prepare for release a real Windows desktop application named **IntLimiter**.
+
+I will not manually write code. Do not ask me to code. Do not leave TODOs for me. Do not stop at planning. Do not give me pseudocode unless it is accompanied by the real implementation files.
+
+Your output must be practical, honest, structured, and release-oriented.
+
+==================================================
+CORE PRODUCT
+==================================================
+
+Build a real Windows application called **IntLimiter**.
+
+Goal:
+- Similar in spirit to NetLimiter
+- Monitor live network traffic
+- Allow limiting internet speed:
+  - per application/process
+  - globally for the whole computer
+- Main interface should feel like Windows 11 Task Manager, but focused only on network activity
+- UI must be fully aligned with Windows 11 look and behavior
+- Must include a real installer/setup package
+- Must include startup update check from the GitHub repository/releases of the project
+- Future idea: built-in speed test
+  - do not fully implement now unless it fits cleanly
+  - but architecture must leave room for it later
+
+==================================================
+ABSOLUTE RULES
+==================================================
+
+1. Do not create a fake demo.
+2. Do not simulate working bandwidth limiting if it is not actually working.
+3. Do not mark experimental or incomplete low-level components as “done”.
+4. Separate clearly:
+   - fully working now
+   - partially working / experimental
+   - blocked by Windows privilege, signing, driver, or deployment constraints
+5. If a feature requires admin rights, service installation, kernel/network filtering, code signing, or special release steps, state that clearly and keep going.
+6. Prefer a working, honest MVP with strong architecture over a fake “everything complete” result.
+7. Build the project in phases, and after each phase keep the repository coherent and runnable as much as possible.
+8. Make engineering assumptions yourself and document them. Do not keep asking me trivial questions.
+
+==================================================
+LOCKED TECH STACK
+==================================================
+
+Use this stack unless there is an unavoidable platform-level reason not to:
+
+- Language: C#
+- Runtime: .NET 8
+- UI: WinUI 3 + Windows App SDK
+- Packaging / auto-update: Velopack or another clearly superior practical equivalent
+- Tests: xUnit or equivalent mature .NET testing stack
+- Logging: structured local logging
+- Persistence: robust local config/settings storage
+
+You may introduce a native C/C++ component ONLY if required for the low-level Windows networking/traffic-control layer.
+If you do, isolate it cleanly and document exactly why it exists.
+
+Do not switch to Electron, web wrappers, or cross-platform UI frameworks.
+This is a Windows-first native desktop utility.
+
+==================================================
+PRODUCT REQUIREMENTS
+==================================================
+
+App name: **IntLimiter**
+
+Main capabilities:
+- Live total upload/download monitoring
+- Per-process upload/download monitoring
+- Global upload limit
+- Global download limit
+- Per-process upload limit
+- Per-process download limit
+- Persisted limits across restarts
+- Re-application of rules after restart whenever architecture allows
+- Startup update check from GitHub release source
+- Installer/setup for end users
+
+UI requirements:
+- Visual language inspired by Windows 11 Task Manager
+- Native Windows 11 feel
+- Light mode and dark mode
+- Smooth table/list performance
+- Searchable and sortable process list
+- Process icon, process name, executable name if available, PID
+- Current upload/download
+- Optional totals/history if practical
+- Limit status
+- Rule enabled/disabled state
+- Clean dialogs and validation
+
+Unit handling:
+At the top of the main page, user must be able to choose display units such as:
+- Mbit/s
+- Kbit/s
+- KB/s
+- MB/s
+- any additional sensible variants you decide
+
+This choice must affect:
+- live monitoring display
+- rule editing inputs and labels
+
+Settings page must allow default units for:
+- monitoring display
+- limit inputs
+
+Also ensure unit conversion logic is correct and tested.
+
+Suggested sections:
+- Dashboard / Overview
+- Processes
+- Limits
+- Events / History
+- Settings
+- Updates / About
+
+==================================================
+IMPORTANT ENGINEERING TRUTH
+==================================================
+
+Real per-process throttling on Windows may require serious system-level mechanisms.
+
+You must NOT fake this.
+
+If true bandwidth limiting requires one or more of the following:
+- Windows service
+- Windows Filtering Platform (WFP)
+- low-level packet filtering / shaping
+- elevated privileges
+- code signing
+- nontrivial deployment conditions
+
+Then do this:
+- choose the most realistic architecture
+- implement the best honest version possible
+- keep the codebase professional
+- document exactly what works in development
+- document exactly what is needed for a production-grade signed release
+- keep incomplete low-level pieces explicitly labeled as experimental if necessary
+
+Do not hide platform constraints.
+Do not pretend OS/network limitations do not exist.
+
+==================================================
+DELIVERY STRATEGY: BUILD IN PHASES
+==================================================
+
+You must execute the work in the following order.
+
+PHASE 1 — Repository foundation
+Create:
+- solution structure
+- projects
+- shared models
+- configuration
+- logging
+- settings persistence
+- documentation skeleton
+- clean repository layout
+
+PHASE 2 — Native Windows UI shell
+Create:
+- WinUI 3 app shell
+- navigation
+- Windows 11-compatible styling
+- Dashboard page
+- Processes page
+- Limits page
+- Settings page
+- About/Updates page
+- theme support
+- mock-safe design-time structure if needed, but transition to real data flow later
+
+PHASE 3 — Monitoring engine
+Implement real traffic monitoring as far as realistically possible:
+- global upload/download monitoring
+- per-process upload/download monitoring
+- refresh/update pipeline to UI
+- efficient polling/event strategy
+- process mapping
+- unit conversion integration
+
+PHASE 4 — Rule system
+Implement:
+- internal rule model
+- persistence
+- per-process rules
+- global rules
+- enable/disable rules
+- validation
+- rehydration on startup
+
+PHASE 5 — Traffic limiting backend
+Implement the most real and honest traffic limiting architecture possible.
+This may include:
+- service
+- low-level helper
+- native component
+- WFP-based design
+- clearly separated backend APIs
+
+Very important:
+- if full production-grade per-process throttling cannot be fully completed without signed low-level components or advanced deployment, do NOT fake success
+- instead, structure it properly, implement the valid parts, and document the remaining deployment requirements exactly
+
+PHASE 6 — Update system
+Implement:
+- startup version check from GitHub releases/repository source
+- semantic version comparison
+- user-facing update flow
+- safe application of updates
+- settings preservation where possible
+
+PHASE 7 — Packaging and installer
+Implement:
+- release build scripts
+- installer/setup generation
+- inclusion of required components
+- service install steps if needed
+- uninstall path
+- release instructions
+
+PHASE 8 — Tests and release docs
+Implement:
+- unit tests
+- integration/smoke tests where reasonable
+- QA checklist
+- release notes structure
+- architecture docs
+- known limitations
+
+==================================================
+OUTPUT RULES WHILE WORKING
+==================================================
+
+Do not dump everything chaotically.
+
+Work in this format:
+
+1. State the final chosen architecture and explain why.
+2. Show the repository tree.
+3. Then create files phase by phase.
+4. For each phase:
+   - state what is being added
+   - provide real file contents
+   - keep naming consistent
+5. Keep all files production-style, not tutorial-style.
+6. Do not use filler phrases like “you can implement this later”.
+7. Do not stop after high-level explanation.
+8. Do not produce giant unstructured walls of code without file names.
+9. Every file must have a clear path and real content.
+
+==================================================
+REPOSITORY STRUCTURE TARGET
+==================================================
+
+Use a structure similar to this unless a better Windows-native structure is clearly justified:
+
+/IntLimiter
+  /src
+    /IntLimiter.App
+    /IntLimiter.UI
+    /IntLimiter.Core
+    /IntLimiter.Infrastructure
+    /IntLimiter.Monitoring
+    /IntLimiter.RateLimiting
+    /IntLimiter.Service
+    /IntLimiter.Updater
+    /IntLimiter.Native   (only if truly needed)
+  /tests
+    /IntLimiter.Core.Tests
+    /IntLimiter.IntegrationTests
+  /build
+  /installer
+  README.md
+  ARCHITECTURE.md
+  RELEASE.md
+  ROADMAP.md
+  CHANGELOG.md
+  LICENSE
+  .gitignore
+
+Adjust naming only if there is a very good reason.
+
+==================================================
+FUNCTIONAL DETAIL REQUIREMENTS
+==================================================
+
+Dashboard:
+- live total upload/download
+- global limits summary
+- top traffic-consuming apps
+- Task-Manager-like list/table
+- quick action to apply/edit/remove a limit
+- top-bar unit selector
+
+Processes page:
+- searchable
+- sortable
+- process icon
+- process name
+- executable/friendly name if possible
+- PID
+- current upload/download
+- current effective limit
+- status/rule badge
+- refresh without freezing UI
+
+Limits page:
+- all active rules
+- create/edit/delete rules
+- quick enable/disable
+- distinguish global vs per-app rules
+- unit-aware inputs
+- robust validation
+- no silent bad conversions
+
+Settings:
+- default monitoring units
+- default limit units
+- theme
+- startup behavior
+- update preferences
+- logging level
+- confirmations
+- refresh interval if appropriate
+
+Updates/About:
+- current version
+- latest known version
+- check update action
+- release channel if you add one
+- GitHub repo/release integration
+
+==================================================
+QUALITY REQUIREMENTS
+==================================================
+
+Target a serious utility that could plausibly be shipped to real users.
+
+The code must be:
+- maintainable
+- layered
+- honest
+- testable
+- release-oriented
+- not overengineered for no reason
+- not underengineered in the critical networking areas
+
+The UI must be:
+- polished
+- clear
+- Windows-native
+- not flashy
+- not ugly
+- not a web-app imitation
+
+==================================================
+TEST REQUIREMENTS
+==================================================
+
+Add tests for:
+- unit conversions
+- validation of speed limit inputs
+- settings persistence
+- rule serialization/deserialization
+- semantic version comparison for updates
+- any pure business logic
+
+Also include a manual QA checklist for:
+- first launch
+- process list loading
+- traffic display
+- unit switching
+- applying/removing limits
+- restart persistence
+- update check
+- installer/uninstaller
+- light/dark mode
+- admin-rights edge cases
+- unsupported/experimental scenarios
+
+==================================================
+DOCUMENTATION REQUIREMENTS
+==================================================
+
+README.md must include:
+- what IntLimiter is
+- current feature status
+- how to build
+- how to run
+- how to package
+- privilege requirements
+- what is truly working
+- known limitations
+
+ARCHITECTURE.md must include:
+- component boundaries
+- UI/data flow
+- monitoring pipeline
+- rule engine
+- limiting backend
+- why architecture was chosen
+- what parts depend on admin rights / advanced deployment
+
+RELEASE.md must include:
+- how to build release artifacts
+- how to create installer
+- how to publish GitHub release
+- how update system reads versions
+- code signing / service / low-level deployment notes if relevant
+
+ROADMAP.md must include:
+- future embedded speed test
+- richer history graphs
+- tray support
+- scheduled rules
+- per-adapter rules
+- more advanced analytics
+
+==================================================
+FINAL COMPLETION FORMAT
+==================================================
+
+At the very end, provide these four sections clearly:
+
+1. FULLY WORKING NOW
+2. REQUIRES ADMIN RIGHTS
+3. REQUIRES PRODUCTION SIGNING / SPECIAL DEPLOYMENT
+4. EXACT NEXT STEPS TO SHIP V1
+
+==================================================
+START
+==================================================
+
+Start now.
+
+First:
+- choose the architecture,
+- show the repository tree,
+- then begin PHASE 1 and continue through the phases.
+
+Do not stop after planning.
+Build IntLimiter end-to-end as far as technically and honestly possible.

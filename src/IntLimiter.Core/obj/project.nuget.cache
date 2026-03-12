@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ul4NP3M7q3g=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.18\\microsoft.netcore.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.18\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.18\\microsoft.aspnetcore.app.runtime.win-x64.8.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

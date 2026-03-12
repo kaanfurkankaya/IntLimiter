@@ -1,0 +1,622 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.App\\IntLimiter.App.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.App\\IntLimiter.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.App\\IntLimiter.App.csproj",
+        "projectName": "IntLimiter.App",
+        "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.App\\IntLimiter.App.csproj",
+        "packagesPath": "C:\\Users\\kaanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj"
+              },
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Infrastructure\\IntLimiter.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Infrastructure\\IntLimiter.Infrastructure.csproj"
+              },
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.RateLimiting\\IntLimiter.RateLimiting.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.RateLimiting\\IntLimiter.RateLimiting.csproj"
+              },
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\IntLimiter.UI.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\IntLimiter.UI.csproj"
+              },
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Updater\\IntLimiter.Updater.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Updater\\IntLimiter.Updater.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.Windows.SDK.BuildTools": {
+              "target": "Package",
+              "version": "[10.0.22621.3233, )"
+            },
+            "Microsoft.WindowsAppSDK": {
+              "target": "Package",
+              "version": "[1.5.240627000, )"
+            },
+            "Velopack": {
+              "target": "Package",
+              "version": "[0.0.1298, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-arm64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.57, 10.0.19041.57]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[8.0.18, 8.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref.Windows": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj",
+        "projectName": "IntLimiter.Core",
+        "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj",
+        "packagesPath": "C:\\Users\\kaanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Infrastructure\\IntLimiter.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Infrastructure\\IntLimiter.Infrastructure.csproj",
+        "projectName": "IntLimiter.Infrastructure",
+        "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Infrastructure\\IntLimiter.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\kaanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.RateLimiting\\IntLimiter.RateLimiting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.RateLimiting\\IntLimiter.RateLimiting.csproj",
+        "projectName": "IntLimiter.RateLimiting",
+        "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.RateLimiting\\IntLimiter.RateLimiting.csproj",
+        "packagesPath": "C:\\Users\\kaanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.RateLimiting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\IntLimiter.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\IntLimiter.UI.csproj",
+        "projectName": "IntLimiter.UI",
+        "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\IntLimiter.UI.csproj",
+        "packagesPath": "C:\\Users\\kaanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj": {
+                "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Core\\IntLimiter.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "Microsoft.Windows.SDK.BuildTools": {
+              "target": "Package",
+              "version": "[10.0.22621.3233, )"
+            },
+            "Microsoft.WindowsAppSDK": {
+              "target": "Package",
+              "version": "[1.5.240627000, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.57, 10.0.19041.57]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref.Windows": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Updater\\IntLimiter.Updater.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Updater\\IntLimiter.Updater.csproj",
+        "projectName": "IntLimiter.Updater",
+        "projectPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Updater\\IntLimiter.Updater.csproj",
+        "packagesPath": "C:\\Users\\kaanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.Updater\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Velopack": {
+              "target": "Package",
+              "version": "[0.0.1298, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.18, 8.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "J5j51BCrPWs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\src\\IntLimiter.UI\\IntLimiter.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kaanf\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.3233\\microsoft.windows.sdk.buildtools.10.0.22621.3233.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240627000\\microsoft.windowsappsdk.1.5.240627000.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.18\\microsoft.netcore.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.18\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.18\\microsoft.aspnetcore.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\kaanf\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}
