@@ -1,7 +1,10 @@
+﻿
 ==================================================
 INTLIMITER AUDIT EXPORT
 ==================================================
 
+
+==================================================
 [SECTION 1] FULL REPOSITORY TREE
 Folder PATH listing for volume SSD 1TB
 Volume serial number is 3EEB-1997
@@ -16,6 +19,7 @@ C:.
 |   README.md
 |   RELEASE.md
 |   
++---Releases
 +---src
 |   +---IntLimiter.App
 |   |   |   app.manifest
@@ -27,8 +31,11 @@ C:.
 |   |   |   
 |   |   +---bin
 |   |   |   \---x64
-|   |   |       \---Debug
+|   |   |       +---Debug
+|   |   |       |   \---net8.0-windows10.0.19041.0
+|   |   |       \---Release
 |   |   |           \---net8.0-windows10.0.19041.0
+|   |   |               \---win-x64
 |   |   +---obj
 |   |   |   |   IntLimiter.App.csproj.nuget.dgspec.json
 |   |   |   |   IntLimiter.App.csproj.nuget.g.props
@@ -41,14 +48,23 @@ C:.
 |   |   |   |           IntLimiter.App.csproj.FileListAbsolute.txt
 |   |   |   |           
 |   |   |   \---x64
-|   |   |       \---Debug
+|   |   |       +---Debug
+|   |   |       |   \---net8.0-windows10.0.19041.0
+|   |   |       |       |   IntLimiter.App.assets.cache
+|   |   |       |       |   IntLimiter.App.csproj.FileListAbsolute.txt
+|   |   |       |       |   IntLimiter.App.GlobalUsings.g.cs
+|   |   |       |       |   
+|   |   |       |       +---ref
+|   |   |       |       \---refint
+|   |   |       \---Release
 |   |   |           \---net8.0-windows10.0.19041.0
-|   |   |               |   IntLimiter.App.assets.cache
-|   |   |               |   IntLimiter.App.csproj.FileListAbsolute.txt
-|   |   |               |   IntLimiter.App.GlobalUsings.g.cs
-|   |   |               |   
-|   |   |               +---ref
-|   |   |               \---refint
+|   |   |               \---win-x64
+|   |   |                   |   IntLimiter.App.assets.cache
+|   |   |                   |   IntLimiter.App.csproj.FileListAbsolute.txt
+|   |   |                   |   IntLimiter.App.GlobalUsings.g.cs
+|   |   |                   |   
+|   |   |                   +---ref
+|   |   |                   \---refint
 |   |   \---Pages
 |   |           DashboardPage.xaml
 |   |           DashboardPage.xaml.cs
@@ -71,7 +87,13 @@ C:.
 |   |   |   |           IntLimiter.Core.pdb
 |   |   |   |           
 |   |   |   \---x64
-|   |   |       \---Debug
+|   |   |       +---Debug
+|   |   |       |   \---net8.0
+|   |   |       |           IntLimiter.Core.deps.json
+|   |   |       |           IntLimiter.Core.dll
+|   |   |       |           IntLimiter.Core.pdb
+|   |   |       |           
+|   |   |       \---Release
 |   |   |           \---net8.0
 |   |   |                   IntLimiter.Core.deps.json
 |   |   |                   IntLimiter.Core.dll
@@ -113,7 +135,27 @@ C:.
 |   |       |               IntLimiter.Core.dll
 |   |       |               
 |   |       \---x64
-|   |           \---Debug
+|   |           +---Debug
+|   |           |   \---net8.0
+|   |           |       |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |           |       |   IntLimiter.Core.AssemblyInfo.cs
+|   |           |       |   IntLimiter.Core.AssemblyInfoInputs.cache
+|   |           |       |   IntLimiter.Core.assets.cache
+|   |           |       |   IntLimiter.Core.csproj.CoreCompileInputs.cache
+|   |           |       |   IntLimiter.Core.csproj.FileListAbsolute.txt
+|   |           |       |   IntLimiter.Core.dll
+|   |           |       |   IntLimiter.Core.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |       |   IntLimiter.Core.GlobalUsings.g.cs
+|   |           |       |   IntLimiter.Core.pdb
+|   |           |       |   IntLimiter.Core.sourcelink.json
+|   |           |       |   
+|   |           |       +---ref
+|   |           |       |       IntLimiter.Core.dll
+|   |           |       |       
+|   |           |       \---refint
+|   |           |               IntLimiter.Core.dll
+|   |           |               
+|   |           \---Release
 |   |               \---net8.0
 |   |                   |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 |   |                   |   IntLimiter.Core.AssemblyInfo.cs
@@ -137,13 +179,33 @@ C:.
 |   |   |   Class1.cs
 |   |   |   IntLimiter.Infrastructure.csproj
 |   |   |   
+|   |   +---bin
+|   |   |   \---x64
+|   |   |       \---Release
+|   |   |           \---net8.0
 |   |   +---obj
-|   |   |       IntLimiter.Infrastructure.csproj.nuget.dgspec.json
-|   |   |       IntLimiter.Infrastructure.csproj.nuget.g.props
-|   |   |       IntLimiter.Infrastructure.csproj.nuget.g.targets
-|   |   |       project.assets.json
-|   |   |       project.nuget.cache
-|   |   |       
+|   |   |   |   IntLimiter.Infrastructure.csproj.nuget.dgspec.json
+|   |   |   |   IntLimiter.Infrastructure.csproj.nuget.g.props
+|   |   |   |   IntLimiter.Infrastructure.csproj.nuget.g.targets
+|   |   |   |   project.assets.json
+|   |   |   |   project.nuget.cache
+|   |   |   |   
+|   |   |   \---x64
+|   |   |       \---Release
+|   |   |           \---net8.0
+|   |   |               |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |   |               |   IntLimiter.Infrastructure.AssemblyInfo.cs
+|   |   |               |   IntLimiter.Infrastructure.AssemblyInfoInputs.cache
+|   |   |               |   IntLimiter.Infrastructure.assets.cache
+|   |   |               |   IntLimiter.Infrastructure.csproj.AssemblyReference.cache
+|   |   |               |   IntLimiter.Infrastructure.csproj.CoreCompileInputs.cache
+|   |   |               |   IntLimiter.Infrastructure.csproj.FileListAbsolute.txt
+|   |   |               |   IntLimiter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+|   |   |               |   IntLimiter.Infrastructure.GlobalUsings.g.cs
+|   |   |               |   IntLimiter.Infrastructure.sourcelink.json
+|   |   |               |   
+|   |   |               +---ref
+|   |   |               \---refint
 |   |   \---Stores
 |   |           RuleStore.cs
 |   |           
@@ -165,14 +227,23 @@ C:.
 |   |   |   RuleEngine.cs
 |   |   |   
 |   |   +---bin
-|   |   |   \---Debug
-|   |   |       \---net8.0
-|   |   |               IntLimiter.Core.dll
-|   |   |               IntLimiter.Core.pdb
-|   |   |               IntLimiter.RateLimiting.deps.json
-|   |   |               IntLimiter.RateLimiting.dll
-|   |   |               IntLimiter.RateLimiting.pdb
-|   |   |               
+|   |   |   +---Debug
+|   |   |   |   \---net8.0
+|   |   |   |           IntLimiter.Core.dll
+|   |   |   |           IntLimiter.Core.pdb
+|   |   |   |           IntLimiter.RateLimiting.deps.json
+|   |   |   |           IntLimiter.RateLimiting.dll
+|   |   |   |           IntLimiter.RateLimiting.pdb
+|   |   |   |           
+|   |   |   \---x64
+|   |   |       \---Release
+|   |   |           \---net8.0
+|   |   |                   IntLimiter.Core.dll
+|   |   |                   IntLimiter.Core.pdb
+|   |   |                   IntLimiter.RateLimiting.deps.json
+|   |   |                   IntLimiter.RateLimiting.dll
+|   |   |                   IntLimiter.RateLimiting.pdb
+|   |   |                   
 |   |   \---obj
 |   |       |   IntLimiter.RateLimiting.csproj.nuget.dgspec.json
 |   |       |   IntLimiter.RateLimiting.csproj.nuget.g.props
@@ -180,28 +251,51 @@ C:.
 |   |       |   project.assets.json
 |   |       |   project.nuget.cache
 |   |       |   
-|   |       \---Debug
-|   |           \---net8.0
-|   |               |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
-|   |               |   IntLimit.37F4F39F.Up2Date
-|   |               |   IntLimiter.RateLimiting.AssemblyInfo.cs
-|   |               |   IntLimiter.RateLimiting.AssemblyInfoInputs.cache
-|   |               |   IntLimiter.RateLimiting.assets.cache
-|   |               |   IntLimiter.RateLimiting.csproj.AssemblyReference.cache
-|   |               |   IntLimiter.RateLimiting.csproj.CoreCompileInputs.cache
-|   |               |   IntLimiter.RateLimiting.csproj.FileListAbsolute.txt
-|   |               |   IntLimiter.RateLimiting.dll
-|   |               |   IntLimiter.RateLimiting.GeneratedMSBuildEditorConfig.editorconfig
-|   |               |   IntLimiter.RateLimiting.GlobalUsings.g.cs
-|   |               |   IntLimiter.RateLimiting.pdb
-|   |               |   IntLimiter.RateLimiting.sourcelink.json
-|   |               |   
-|   |               +---ref
-|   |               |       IntLimiter.RateLimiting.dll
-|   |               |       
-|   |               \---refint
-|   |                       IntLimiter.RateLimiting.dll
-|   |                       
+|   |       +---Debug
+|   |       |   \---net8.0
+|   |       |       |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |       |       |   IntLimit.37F4F39F.Up2Date
+|   |       |       |   IntLimiter.RateLimiting.AssemblyInfo.cs
+|   |       |       |   IntLimiter.RateLimiting.AssemblyInfoInputs.cache
+|   |       |       |   IntLimiter.RateLimiting.assets.cache
+|   |       |       |   IntLimiter.RateLimiting.csproj.AssemblyReference.cache
+|   |       |       |   IntLimiter.RateLimiting.csproj.CoreCompileInputs.cache
+|   |       |       |   IntLimiter.RateLimiting.csproj.FileListAbsolute.txt
+|   |       |       |   IntLimiter.RateLimiting.dll
+|   |       |       |   IntLimiter.RateLimiting.GeneratedMSBuildEditorConfig.editorconfig
+|   |       |       |   IntLimiter.RateLimiting.GlobalUsings.g.cs
+|   |       |       |   IntLimiter.RateLimiting.pdb
+|   |       |       |   IntLimiter.RateLimiting.sourcelink.json
+|   |       |       |   
+|   |       |       +---ref
+|   |       |       |       IntLimiter.RateLimiting.dll
+|   |       |       |       
+|   |       |       \---refint
+|   |       |               IntLimiter.RateLimiting.dll
+|   |       |               
+|   |       \---x64
+|   |           \---Release
+|   |               \---net8.0
+|   |                   |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |                   |   IntLimit.37F4F39F.Up2Date
+|   |                   |   IntLimiter.RateLimiting.AssemblyInfo.cs
+|   |                   |   IntLimiter.RateLimiting.AssemblyInfoInputs.cache
+|   |                   |   IntLimiter.RateLimiting.assets.cache
+|   |                   |   IntLimiter.RateLimiting.csproj.AssemblyReference.cache
+|   |                   |   IntLimiter.RateLimiting.csproj.CoreCompileInputs.cache
+|   |                   |   IntLimiter.RateLimiting.csproj.FileListAbsolute.txt
+|   |                   |   IntLimiter.RateLimiting.dll
+|   |                   |   IntLimiter.RateLimiting.GeneratedMSBuildEditorConfig.editorconfig
+|   |                   |   IntLimiter.RateLimiting.GlobalUsings.g.cs
+|   |                   |   IntLimiter.RateLimiting.pdb
+|   |                   |   IntLimiter.RateLimiting.sourcelink.json
+|   |                   |   
+|   |                   +---ref
+|   |                   |       IntLimiter.RateLimiting.dll
+|   |                   |       
+|   |                   \---refint
+|   |                           IntLimiter.RateLimiting.dll
+|   |                           
 |   +---IntLimiter.Service
 |   |   |   appsettings.Development.json
 |   |   |   appsettings.json
@@ -242,13 +336,43 @@ C:.
 |       |   IntLimiter.Updater.csproj
 |       |   UpdateEngine.cs
 |       |   
+|       +---bin
+|       |   \---x64
+|       |       \---Release
+|       |           \---net8.0
+|       |                   IntLimiter.Updater.deps.json
+|       |                   IntLimiter.Updater.dll
+|       |                   IntLimiter.Updater.pdb
+|       |                   
 |       \---obj
-|               IntLimiter.Updater.csproj.nuget.dgspec.json
-|               IntLimiter.Updater.csproj.nuget.g.props
-|               IntLimiter.Updater.csproj.nuget.g.targets
-|               project.assets.json
-|               project.nuget.cache
-|               
+|           |   IntLimiter.Updater.csproj.nuget.dgspec.json
+|           |   IntLimiter.Updater.csproj.nuget.g.props
+|           |   IntLimiter.Updater.csproj.nuget.g.targets
+|           |   project.assets.json
+|           |   project.nuget.cache
+|           |   
+|           \---x64
+|               \---Release
+|                   \---net8.0
+|                       |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|                       |   IntLimiter.Updater.AssemblyInfo.cs
+|                       |   IntLimiter.Updater.AssemblyInfoInputs.cache
+|                       |   IntLimiter.Updater.assets.cache
+|                       |   IntLimiter.Updater.csproj.AssemblyReference.cache
+|                       |   IntLimiter.Updater.csproj.CoreCompileInputs.cache
+|                       |   IntLimiter.Updater.csproj.FileListAbsolute.txt
+|                       |   IntLimiter.Updater.dll
+|                       |   IntLimiter.Updater.GeneratedMSBuildEditorConfig.editorconfig
+|                       |   IntLimiter.Updater.GlobalUsings.g.cs
+|                       |   IntLimiter.Updater.pdb
+|                       |   IntLimiter.Updater.sourcelink.json
+|                       |   
+|                       +---ref
+|                       |       IntLimiter.Updater.dll
+|                       |       
+|                       \---refint
+|                               IntLimiter.Updater.dll
+|                               
 \---tests
     \---IntLimiter.Core.Tests
         |   IntLimiter.Core.Tests.csproj
@@ -1929,82 +2053,85 @@ Experimental / incomplete:
 
 ----- COMMAND START: dotnet restore IntLimiter.sln -----
   Determining projects to restore...
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj (in 125 ms).
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.App\IntLimiter.App.csproj (in 1,03 sec).
-  Failed to restore C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj (in 1,01 sec).
-  6 of 9 projects are up-to-date for restore.
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Core\IntLimiter.Core.csproj (in 126 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj (in 126 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.RateLimiting\IntLimiter.RateLimiting.csproj (in 126 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Updater\IntLimiter.Updater.csproj (in 180 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj (in 185 ms).
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.App\IntLimiter.App.csproj (in 216 ms).
+  Failed to restore C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj (in 220 ms).
+  2 of 9 projects are up-to-date for restore.
 
-[RESULT: SUCCESS]
+[RESULT: FAILED]
 ----- COMMAND END: dotnet restore IntLimiter.sln -----
 
 ----- COMMAND START: dotnet build IntLimiter.sln -----
   Determining projects to restore...
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-  Failed to restore C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj (in 362 ms).
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+  Failed to restore C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj (in 336 ms).
   8 of 9 projects are up-to-date for restore.
 
 Build FAILED.
 
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
     0 Warning(s)
     1 Error(s)
 
-Time Elapsed 00:00:01.06
+Time Elapsed 00:00:01.03
 
-[RESULT: SUCCESS]
+[RESULT: FAILED]
 ----- COMMAND END: dotnet build IntLimiter.sln -----
 
 ----- COMMAND START: dotnet test IntLimiter.sln -----
   Determining projects to restore...
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\IntLimiter.sln]
-  Failed to restore C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj (in 271 ms).
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605: Warning As Error: Detected package downgrade: Microsoft.Extensions.Hosting from 10.0.5 to 9.0.7. Reference the package directly from the project to select a different version.  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting.WindowsServices 10.0.5 -> Microsoft.Extensions.Hosting (>= 10.0.5)  [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj : error NU1605:  IntLimiter.Service -> Microsoft.Extensions.Hosting (>= 9.0.7) [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\IntLimiter.sln]
+  Failed to restore C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Service\IntLimiter.Service.csproj (in 292 ms).
   8 of 9 projects are up-to-date for restore.
 
-[RESULT: SUCCESS]
+[RESULT: FAILED]
 ----- COMMAND END: dotnet test IntLimiter.sln -----
 
 ----- COMMAND START: powershell -ExecutionPolicy Bypass -File .\build_release.ps1 -----
 Installing/Updating Velopack CLI...
-You can invoke the tool using the following command: vpk
-Tool 'vpk' (version '0.0.1298') was successfully installed.
+Tool 'vpk' is already installed.
 Publishing IntLimiter.App...
   Determining projects to restore...
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Core\IntLimiter.Core.csproj (in 216 ms).
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj (in 218 ms).
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.RateLimiting\IntLimiter.RateLimiting.csproj (in 218 ms).
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Updater\IntLimiter.Updater.csproj (in 220 ms).
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj (in 250 ms).
-  Restored C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.App\IntLimiter.App.csproj (in 265 ms).
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-arm' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-arm-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-arm64-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x86' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x86-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x64' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x64-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
-  IntLimiter.Core -> C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Core\bin\x64\Release\net8.0\IntLimiter.Core.dll
-  IntLimiter.Updater -> C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Updater\bin\x64\Release\net8.0\IntLimiter.Updater.dll
-  IntLimiter.RateLimiting -> C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Release\net8.0\IntLimiter.RateLimiting.dll
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Infrastructure\Stores\RuleStore.cs(20,17): error CS0246: The type or namespace name 'Rule' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj]
-C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Infrastructure\Stores\RuleStore.cs(35,27): error CS0246: The type or namespace name 'Rule' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\kaanf\OneDrive\Masa++st++\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj]
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.RateLimiting\IntLimiter.RateLimiting.csproj (in 206 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Updater\IntLimiter.Updater.csproj (in 209 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj (in 206 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Core\IntLimiter.Core.csproj (in 204 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj (in 234 ms).
+  Restored C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.App\IntLimiter.App.csproj (in 244 ms).
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-arm' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-arm-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-arm64-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x86' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x86-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x64' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+C:\Program Files\dotnet\sdk\9.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(107,5): error NETSDK1083: The specified RuntimeIdentifier 'win10-x64-aot' is not recognized. See https://aka.ms/netsdk1083 for more information. [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.UI\IntLimiter.UI.csproj]
+  IntLimiter.Core -> C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Core\bin\x64\Release\net8.0\IntLimiter.Core.dll
+  IntLimiter.Updater -> C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Updater\bin\x64\Release\net8.0\IntLimiter.Updater.dll
+  IntLimiter.RateLimiting -> C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Release\net8.0\IntLimiter.RateLimiting.dll
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Infrastructure\Stores\RuleStore.cs(20,17): error CS0246: The type or namespace name 'Rule' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj]
+C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Infrastructure\Stores\RuleStore.cs(35,27): error CS0246: The type or namespace name 'Rule' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\kaanf\OneDrive\Masa├╝st├╝\kfk\IntLimiter\src\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj]
 Packaging with Velopack...
-[02:10:00 INF] Velopack CLI 0.0.1298, for distributing applications.
-[02:10:01 INF] Beginning to package Velopack release 1.0.0.
-[02:10:01 INF] Releases Directory: C:\Users\kaanf\OneDrive\Masa�st�\kfk\IntLimiter\Releases
-[02:10:01 FTL] Could not find main application executable (the one that runs 'VelopackApp.Build().Run()'). 
+[02:19:57 INF] Velopack CLI 0.0.1298, for distributing applications.
+[02:19:57 INF] Beginning to package Velopack release 1.0.0.
+[02:19:57 INF] Releases Directory: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases
+[02:19:57 FTL] Could not find main application executable (the one that runs 'VelopackApp.Build().Run()'). 
 If your main binary is not named 'IntLimiter.App.exe', please specify the name with the argument: --mainExe {yourBinary.exe}
 I searched the following paths and none exist: 
-C:\Users\kaanf\OneDrive\Masa�st�\kfk\IntLimiter\src\IntLimiter.App\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\IntLimiter.App.exe
-C:\Users\kaanf\OneDrive\Masa�st�\kfk\IntLimiter\src\IntLimiter.App\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\IntLimiter.App.exe.exe
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.App\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\IntLimiter.App.exe
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.App\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\IntLimiter.App.exe.exe
 Release packaged successfully in /Releases folder!
 
 [RESULT: SUCCESS]

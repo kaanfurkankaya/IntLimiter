@@ -1,4 +1,5 @@
 using IntLimiter.Core.Contracts;
+using IntLimiter.Core.Models;
 using IntLimiter.RateLimiting;
 using System.Collections.Generic;
 using System.Linq;

@@ -10,7 +10,7 @@
         <StackPanel Spacing="16">
             <TextBlock Text="Limits &amp; Rules" Style="{ThemeResource TitleTextBlockStyle}" />
             <TextBlock Text="Configure global and per-process network traffic limits." Style="{ThemeResource BodyTextBlockStyle}" />
-            <Button Content="Add Mock Rule" Style="{ThemeResource AccentButtonStyle}" Command="{x:Bind ViewModel.AddMockRuleCommand}"/>
+            <TextBlock Text="Rule creation is not implemented in this build." Opacity="0.7" />
             
             <ListView ItemsSource="{x:Bind ViewModel.Rules, Mode=OneWay}">
                 <ListView.ItemTemplate>

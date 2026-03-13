@@ -2,8 +2,8 @@ using IntLimiter.Service;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-var builder = Host.CreateDefaultBuilder(args);
-builder.UseWindowsService(options =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddWindowsService(options =>
 {
     options.ServiceName = "IntLimiter Service";
 });

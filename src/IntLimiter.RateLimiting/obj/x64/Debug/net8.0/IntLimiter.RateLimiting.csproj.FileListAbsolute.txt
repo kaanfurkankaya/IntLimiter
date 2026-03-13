@@ -1,0 +1,16 @@
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Debug\net8.0\IntLimiter.RateLimiting.deps.json
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Debug\net8.0\IntLimiter.RateLimiting.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Debug\net8.0\IntLimiter.RateLimiting.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Debug\net8.0\IntLimiter.Core.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\bin\x64\Debug\net8.0\IntLimiter.Core.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.csproj.AssemblyReference.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.AssemblyInfoInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.AssemblyInfo.cs
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.csproj.CoreCompileInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.sourcelink.json
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimit.37F4F39F.Up2Date
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\refint\IntLimiter.RateLimiting.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\IntLimiter.RateLimiting.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.RateLimiting\obj\x64\Debug\net8.0\ref\IntLimiter.RateLimiting.dll

@@ -10,8 +10,10 @@ namespace IntLimiter.App.Pages
 
         public ProcessesPage()
         {
-            this.InitializeComponent();
             ViewModel = App.Current.Services.GetRequiredService<ProcessesViewModel>();
+            this.InitializeComponent();
+            ViewModel.UiDispatch = action => DispatcherQueue.TryEnqueue(() => action());
+            ViewModel.RefreshFromMonitor();
         }
     }
 }

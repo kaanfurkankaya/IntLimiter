@@ -1,10 +1,4 @@
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_IntLimiter.Core.Tests
-C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.csproj.AssemblyReference.cache
-C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.AssemblyInfoInputs.cache
-C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.AssemblyInfo.cs
-C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.csproj.CoreCompileInputs.cache
-C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.sourcelink.json
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\testhost.dll
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -97,6 +91,12 @@ C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bi
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\IntLimiter.RateLimiting.dll
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\IntLimiter.Core.pdb
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\bin\Debug\net8.0\IntLimiter.RateLimiting.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.csproj.AssemblyReference.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.AssemblyInfoInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.AssemblyInfo.cs
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.csproj.CoreCompileInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.sourcelink.json
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimit.C1E6CDD1.Up2Date
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\IntLimiter.Core.Tests.dll
 C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\tests\IntLimiter.Core.Tests\obj\Debug\net8.0\refint\IntLimiter.Core.Tests.dll

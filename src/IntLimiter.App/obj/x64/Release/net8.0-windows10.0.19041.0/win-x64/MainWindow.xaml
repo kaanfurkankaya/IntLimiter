@@ -1,0 +1,18 @@
+﻿<Window
+    x:Class="IntLimiter.App.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="IntLimiter">
+
+    <Grid>
+        <NavigationView x:ConnectionId='2' x:Name="NavView" PaneDisplayMode="Left"                                            >
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Dashboard" Tag="DashboardPage"/>
+                <NavigationViewItem Icon="List" Content="Processes" Tag="ProcessesPage"/>
+                <NavigationViewItem Icon="Help" Content="Limits" Tag="LimitsPage"/>
+            </NavigationView.MenuItems>
+            <Frame x:ConnectionId='3' x:Name="ContentFrame" />
+        </NavigationView>
+    </Grid>
+</Window>
+

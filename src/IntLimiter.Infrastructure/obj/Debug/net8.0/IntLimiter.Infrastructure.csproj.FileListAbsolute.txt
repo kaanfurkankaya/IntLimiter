@@ -1,0 +1,16 @@
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\bin\Debug\net8.0\IntLimiter.Infrastructure.deps.json
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\bin\Debug\net8.0\IntLimiter.Infrastructure.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\bin\Debug\net8.0\IntLimiter.Infrastructure.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\bin\Debug\net8.0\IntLimiter.Core.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\bin\Debug\net8.0\IntLimiter.Core.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.AssemblyInfo.cs
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.sourcelink.json
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimit.6E667596.Up2Date
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\refint\IntLimiter.Infrastructure.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\IntLimiter.Infrastructure.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Infrastructure\obj\Debug\net8.0\ref\IntLimiter.Infrastructure.dll

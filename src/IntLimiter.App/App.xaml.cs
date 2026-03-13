@@ -17,7 +17,6 @@ namespace IntLimiter.App
 
         public App()
         {
-            Velopack.VelopackApp.Build().Run();
             this.InitializeComponent();
             Services = ConfigureServices();
         }
@@ -58,6 +57,11 @@ namespace IntLimiter.App
             catch (UnauthorizedAccessException)
             {
                 // To be handled gracefully in UI
+            }
+            catch (Exception ex)
+            {
+                var crashPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "STARTUP_CRASH_REPORT.txt");
+                System.IO.File.WriteAllText(crashPath, $"CRITICAL STARTUP CRASH:\n{ex.GetType().Name}\n{ex.Message}\n\nSTACK TRACE:\n{ex.StackTrace}\n\nINNER EXCEPTION:\n{ex.InnerException?.Message}\n{ex.InnerException?.StackTrace}");
             }
 
             m_window = new MainWindow();

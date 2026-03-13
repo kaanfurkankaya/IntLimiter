@@ -1,0 +1,13 @@
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\bin\x64\Debug\net8.0\IntLimiter.Updater.deps.json
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\bin\x64\Debug\net8.0\IntLimiter.Updater.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\bin\x64\Debug\net8.0\IntLimiter.Updater.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.csproj.AssemblyReference.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.AssemblyInfoInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.AssemblyInfo.cs
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.csproj.CoreCompileInputs.cache
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.sourcelink.json
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\refint\IntLimiter.Updater.dll
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\IntLimiter.Updater.pdb
+C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\src\IntLimiter.Updater\obj\x64\Debug\net8.0\ref\IntLimiter.Updater.dll

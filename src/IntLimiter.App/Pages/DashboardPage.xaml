@@ -9,10 +9,13 @@
     <Grid Padding="24">
         <StackPanel Spacing="16">
             <TextBlock Text="Dashboard" Style="{ThemeResource TitleTextBlockStyle}" />
+            <TextBlock Text="{x:Bind ViewModel.MonitoringStatus, Mode=OneWay}" TextWrapping="Wrap" />
             <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" CornerRadius="8">
                 <StackPanel Spacing="8">
                     <TextBlock Text="Global Network Usage" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                    <TextBlock Text="Download" />
                     <TextBlock Text="{x:Bind ViewModel.TotalDownload, Mode=OneWay}" />
+                    <TextBlock Text="Upload" />
                     <TextBlock Text="{x:Bind ViewModel.TotalUpload, Mode=OneWay}" />
                 </StackPanel>
             </Border>

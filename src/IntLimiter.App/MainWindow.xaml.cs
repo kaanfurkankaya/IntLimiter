@@ -19,7 +19,7 @@ namespace IntLimiter.App
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            if (args.IsSettingsInvoked)
+            if (args.IsSettingsSelected)
             {
                 Navigate("SettingsPage");
                 return;

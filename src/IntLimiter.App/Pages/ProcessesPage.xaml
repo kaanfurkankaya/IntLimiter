@@ -14,9 +14,49 @@
         
         <StackPanel Spacing="16" Grid.Row="0" Margin="0,0,0,16">
             <TextBlock Text="Processes" Style="{ThemeResource TitleTextBlockStyle}" />
-            <AutoSuggestBox PlaceholderText="Search processes..." Width="300" HorizontalAlignment="Left" />
+            <TextBlock Text="{x:Bind ViewModel.MonitoringStatus, Mode=OneWay}" TextWrapping="Wrap" />
+            <AutoSuggestBox PlaceholderText="Search processes..." Text="{x:Bind ViewModel.SearchText, Mode=TwoWay}" Width="300" HorizontalAlignment="Left" />
         </StackPanel>
 
-        <ListView Grid.Row="1" />
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="{x:Bind ViewModel.EmptyStateMessage, Mode=OneWay}" TextWrapping="Wrap" Margin="0,0,0,12" />
+
+            <ListView Grid.Row="1" ItemsSource="{x:Bind ViewModel.Processes, Mode=OneWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="12" Margin="0,0,0,8" CornerRadius="6">
+                            <Grid ColumnSpacing="16">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="{Binding ProcessName}" FontWeight="SemiBold" />
+                                    <TextBlock Text="{Binding DisplayIdentity}" Opacity="0.7" />
+                                    <TextBlock Text="{Binding ExecutablePath}" Opacity="0.6" TextWrapping="WrapWholeWords" />
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="Download" Opacity="0.7" />
+                                    <TextBlock Text="{Binding DisplayDownloadRate}" />
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2">
+                                    <TextBlock Text="Upload" Opacity="0.7" />
+                                    <TextBlock Text="{Binding DisplayUploadRate}" />
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </Grid>
 </Page>

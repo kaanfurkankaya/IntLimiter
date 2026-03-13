@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntLimiter.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+109afdb1b5d7957d47b0880cd5333f5a08d3bb34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16eeec91451e06b731e019837af1144767f1eb58")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntLimiter.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntLimiter.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

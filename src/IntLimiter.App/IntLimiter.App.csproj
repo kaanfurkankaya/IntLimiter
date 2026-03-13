@@ -6,18 +6,22 @@
     <RootNamespace>IntLimiter.App</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>x86;x64;arm64</Platforms>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
     <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
-    <PublishProfile>win-$(Platform).pubxml</PublishProfile>
+    <UseRidGraph>true</UseRidGraph>
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsPackageType>None</WindowsPackageType>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
+    <DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN</DefineConstants>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240627000" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
     <Manifest Include="$(ApplicationManifest)" />
@@ -30,5 +34,6 @@
     <ProjectReference Include="..\IntLimiter.Infrastructure\IntLimiter.Infrastructure.csproj" />
     <ProjectReference Include="..\IntLimiter.RateLimiting\IntLimiter.RateLimiting.csproj" />
     <ProjectReference Include="..\IntLimiter.Updater\IntLimiter.Updater.csproj" />
+    <ProjectReference Include="..\IntLimiter.Monitoring\IntLimiter.Monitoring.csproj" />
   </ItemGroup>
 </Project>

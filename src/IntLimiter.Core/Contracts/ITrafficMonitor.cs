@@ -9,6 +9,10 @@ public interface ITrafficMonitor : IDisposable
     void Start();
     void Stop();
     
+    bool IsRunning { get; }
+    bool RequiresAdministrator { get; }
+    string StatusMessage { get; }
+
     long GlobalDownloadBytesPerSecond { get; }
     long GlobalUploadBytesPerSecond { get; }
     

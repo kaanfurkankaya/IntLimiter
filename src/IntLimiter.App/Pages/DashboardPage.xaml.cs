@@ -10,8 +10,10 @@ namespace IntLimiter.App.Pages
 
         public DashboardPage()
         {
-            this.InitializeComponent();
             ViewModel = App.Current.Services.GetRequiredService<DashboardViewModel>();
+            this.InitializeComponent();
+            ViewModel.UiDispatch = action => DispatcherQueue.TryEnqueue(() => action());
+            ViewModel.RefreshFromMonitor();
         }
     }
 }

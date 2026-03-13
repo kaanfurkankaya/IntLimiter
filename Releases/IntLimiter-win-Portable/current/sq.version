@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<metadata>
+<id>IntLimiter</id>
+<title>IntLimiter</title>
+<description>IntLimiter</description>
+<authors>IntLimiter</authors>
+<version>1.0.0</version>
+<channel>win</channel>
+<mainExe>IntLimiter.App.exe</mainExe>
+<os>win</os>
+<rid>win</rid>
+<shortcutLocations>Desktop,StartMenuRoot</shortcutLocations>
+<shortcutAmuid>velopack.IntLimiter</shortcutAmuid>
+</metadata>
+</package>

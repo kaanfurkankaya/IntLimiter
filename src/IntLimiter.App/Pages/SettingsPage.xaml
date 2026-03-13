@@ -19,7 +19,7 @@
             <TextBlock Text="{x:Bind ViewModel.CurrentVersion, Mode=OneWay}" Margin="0,24,0,0"/>
             <StackPanel Orientation="Horizontal" Spacing="8">
                 <Button Content="{x:Bind ViewModel.UpdateStatus, Mode=OneWay}" Command="{x:Bind ViewModel.CheckUpdatesCommand}" />
-                <Button Content="Install &amp; Restart" Visibility="{x:Bind ViewModel.IsUpdateAvailable, Mode=OneWay}" Command="{x:Bind ViewModel.ApplyUpdateCommand}" Style="{ThemeResource AccentButtonStyle}" />
+                <Button Content="Install &amp; Restart" Visibility="{x:Bind BoolToVisibility(ViewModel.IsUpdateAvailable), Mode=OneWay}" Command="{x:Bind ViewModel.ApplyUpdateCommand}" Style="{ThemeResource AccentButtonStyle}" />
             </StackPanel>
         </StackPanel>
     </Grid>

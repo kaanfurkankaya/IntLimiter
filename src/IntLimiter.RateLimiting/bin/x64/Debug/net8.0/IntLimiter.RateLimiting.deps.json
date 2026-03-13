@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IntLimiter.RateLimiting/1.0.0": {
+        "dependencies": {
+          "IntLimiter.Core": "1.0.0"
+        },
+        "runtime": {
+          "IntLimiter.RateLimiting.dll": {}
+        }
+      },
+      "IntLimiter.Core/1.0.0": {
+        "runtime": {
+          "IntLimiter.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IntLimiter.RateLimiting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IntLimiter.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

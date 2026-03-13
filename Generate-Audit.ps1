@@ -1,70 +1,93 @@
 $ErrorActionPreference = "Stop"
 
+Set-Location $PSScriptRoot
+if (-Not (Test-Path "IntLimiter.sln")) {
+    Write-Error "IntLimiter.sln not found in the current directory. Please run this script from the repository root."
+    exit 1
+}
+
 $outputFile = "INTLIMITER_AUDIT_EXPORT.txt"
-if (Test-Path $outputFile) { Remove-Item $outputFile }
+if (Test-Path $outputFile) { Remove-Item $outputFile -Force }
 
 function Write-Section {
     param([string]$title)
-    Add-Content $outputFile ""
-    Add-Content $outputFile "=================================================="
+    Add-Content $outputFile "" -Encoding UTF8
+    Add-Content $outputFile "==================================================" -Encoding UTF8
     if ($title -eq "INTLIMITER AUDIT EXPORT") {
-        Add-Content $outputFile $title
-        Add-Content $outputFile "=================================================="
-        Add-Content $outputFile ""
+        Add-Content $outputFile $title -Encoding UTF8
+        Add-Content $outputFile "==================================================" -Encoding UTF8
+        Add-Content $outputFile "" -Encoding UTF8
     } else {
-        Add-Content $outputFile $title
+        Add-Content $outputFile $title -Encoding UTF8
     }
 }
 
 function Write-FileContent {
     param([string]$filePath)
     $normalizedPath = $filePath -replace '\\', '/'
-    Add-Content $outputFile ""
-    Add-Content $outputFile "----- FILE START: $normalizedPath -----"
+    Add-Content $outputFile "" -Encoding UTF8
+    Add-Content $outputFile "----- FILE START: $normalizedPath -----" -Encoding UTF8
     if (Test-Path $filePath) {
         $content = Get-Content $filePath -Raw -Encoding UTF8
-        # Some files might have no trailing newline, make sure we append cleanly
         if ($content -eq $null) {
-            Add-Content $outputFile ""
+            Add-Content $outputFile "" -Encoding UTF8
         } else {
-            Add-Content $outputFile $content
+            Add-Content $outputFile $content -Encoding UTF8
         }
     } else {
-        Add-Content $outputFile "File does not exist: $normalizedPath"
+        Add-Content $outputFile "File does not exist: $normalizedPath" -Encoding UTF8
     }
-    Add-Content $outputFile "----- FILE END: $normalizedPath -----"
+    Add-Content $outputFile "----- FILE END: $normalizedPath -----" -Encoding UTF8
 }
 
 function Write-CommandResult {
     param([string]$cmdText, [string]$scriptBlock)
     
-    Add-Content $outputFile ""
-    Add-Content $outputFile "----- COMMAND START: $cmdText -----"
+    Add-Content $outputFile "" -Encoding UTF8
+    Add-Content $outputFile "----- COMMAND START: $cmdText -----" -Encoding UTF8
     Write-Host "Running: $cmdText"
-    $output = Invoke-Expression $scriptBlock 2>&1
     
-    foreach ($line in $output) {
-        Add-Content $outputFile "$line"
+    $oldErrorAction = $ErrorActionPreference
+    $ErrorActionPreference = "Continue" # Ensure one command failure doesn't kill the script
+    
+    # Reset LASTEXITCODE just in case
+    $global:LASTEXITCODE = $null
+
+    try {
+        $output = Invoke-Expression $scriptBlock 2>&1
+        $success = $?
+    } catch {
+        $output = $_.Exception.Message
+        $success = $false
     }
     
-    $success = $?
+    $exitCode = $global:LASTEXITCODE
+    
+    $ErrorActionPreference = $oldErrorAction
+    
+    if ($output) {
+        foreach ($line in $output) {
+            Add-Content $outputFile "$line" -Encoding UTF8
+        }
+    }
+    
+    if ($null -ne $exitCode) {
+        $success = ($exitCode -eq 0)
+    }
+    
     $statusText = if ($success) { "SUCCESS" } else { "FAILED" }
-    Add-Content $outputFile ""
-    Add-Content $outputFile "[RESULT: $statusText]"
-    Add-Content $outputFile "----- COMMAND END: $cmdText -----"
+    Add-Content $outputFile "" -Encoding UTF8
+    Add-Content $outputFile "[RESULT: $statusText]" -Encoding UTF8
+    Add-Content $outputFile "----- COMMAND END: $cmdText -----" -Encoding UTF8
 }
 
-Add-Content $outputFile "=================================================="
-Add-Content $outputFile "INTLIMITER AUDIT EXPORT"
-Add-Content $outputFile "=================================================="
-Add-Content $outputFile ""
+Write-Section "INTLIMITER AUDIT EXPORT"
 
-Add-Content $outputFile "[SECTION 1] FULL REPOSITORY TREE"
-$treeOutput = tree /F /A
+Write-Section "[SECTION 1] FULL REPOSITORY TREE"
+$treeOutput = cmd /c tree /F /A
 foreach ($line in $treeOutput) {
-    Add-Content $outputFile $line
+    Add-Content $outputFile $line -Encoding UTF8
 }
-
 
 Write-Section "[SECTION 2] SOLUTION AND PROJECT FILES"
 $sec2Files = @(
@@ -137,9 +160,7 @@ $sec7Files = @(
 foreach ($f in $sec7Files) { Write-FileContent $f }
 
 Write-Section "[SECTION 8] BUILD / PACKAGE SCRIPTS"
-$sec8Files = @(
-    "build_release.ps1"
-)
+$sec8Files = @("build_release.ps1")
 foreach ($f in $sec8Files) { Write-FileContent $f }
 
 Write-Section "[SECTION 9] BUILD AND RUN COMMANDS"
@@ -150,7 +171,7 @@ $cmds = @"
 - run tests: dotnet test IntLimiter.sln
 - package release: powershell -ExecutionPolicy Bypass -File .\build_release.ps1
 "@
-Add-Content $outputFile $cmds
+Add-Content $outputFile $cmds -Encoding UTF8
 
 Write-Section "[SECTION 10] ACTUAL CURRENT CAPABILITIES"
 $caps = @"
@@ -176,7 +197,7 @@ Placeholder / not implemented:
 Experimental / incomplete:
 - The `IntLimiter.Service` project is an incomplete placeholder awaiting implementation to bridge UI configuration to the WFP layer.
 "@
-Add-Content $outputFile $caps
+Add-Content $outputFile $caps -Encoding UTF8
 
 Write-Section "[SECTION 11] PLACEHOLDER / NONFUNCTIONAL / MANUAL FIXES"
 $fixes = @"
@@ -187,12 +208,10 @@ $fixes = @"
 - An EV Code Signing Certificate is required for the driver.
 - The Background Service must be manually installed using `sc create` or similar logic inside an MSIX/InnoSetup later, as `build_release.ps1` only packs the App frontend right now.
 "@
-Add-Content $outputFile $fixes
+Add-Content $outputFile $fixes -Encoding UTF8
 
 
 Write-Section "[SECTION 12] BUILD VERIFICATION"
-
-$ErrorActionPreference = "Continue" # So commands can fail and we still run the rest
 
 Write-CommandResult "dotnet restore IntLimiter.sln" "dotnet restore IntLimiter.sln"
 Write-CommandResult "dotnet build IntLimiter.sln" "dotnet build IntLimiter.sln"
@@ -225,6 +244,6 @@ $finalStatus = @"
 - Step 3: Implement Named Pipe client in RuleEngine.cs to send the JSON rules over.
 - Step 4: Buy EV code signing cert, sign the WFP driver, and build an installer that elevates once to install the driver and service, allowing the WinUI 3 app to run as standard user thereafter.
 "@
-Add-Content $outputFile $finalStatus
+Add-Content $outputFile $finalStatus -Encoding UTF8
 
 Write-Host "Export fully generated to $PWD\$outputFile"

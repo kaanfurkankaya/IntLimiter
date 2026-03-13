@@ -1,0 +1,44 @@
+[stub:28644] [04:47:51] [INFO] --
+[stub:28644] [04:47:51] [INFO] Starting Velopack Stub (at "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\Releases\\IntLimiter-win-Portable\\IntLimiter.exe")
+[stub:28644] [04:47:51] [INFO] Stub about to start Update.exe (C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable\Update.exe) with args: ["start", "--"]
+[stub:28644] [04:47:51] [INFO] Successfully started Update.exe
+[update:30148] [04:47:51] [INFO] --
+[update:30148] [04:47:51] [INFO] Starting Velopack Updater (0.0.1298)
+[update:30148] [04:47:51] [INFO]     Location: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable\Update.exe
+[update:30148] [04:47:51] [INFO]     CWD: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable
+[update:30148] [04:47:51] [INFO]     Verbose: false
+[update:30148] [04:47:51] [INFO]     Silent: false
+[update:30148] [04:47:51] [INFO]     Log File: None
+[update:30148] [04:47:51] [INFO] Command: Start
+[update:30148] [04:47:51] [INFO]     Wait: NoWait
+[update:30148] [04:47:51] [INFO]     Exe Name: None
+[update:30148] [04:47:51] [INFO]     Exe Args: None
+[update:30148] [04:47:51] [INFO] Auto-locating app manifest...
+[update:30148] [04:47:51] [INFO] About to launch: '"C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\Releases\\IntLimiter-win-Portable\\current\\IntLimiter.App.exe"' in dir '"C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\Releases\\IntLimiter-win-Portable\\current"'
+[lib-csharp:14724] [04:47:52] [Information] Initialising WindowsVelopackLocator
+[lib-csharp:14724] [04:47:52] [Information] WindowsVelopackLocator: Update.exe in parent dir, Located valid manifest file at: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable\current\sq.version
+[lib-csharp:14724] [04:47:52] [Information] Initialised WindowsVelopackLocator for IntLimiter v1.0.0
+[lib-csharp:14724] [04:47:52] [Information] Starting VelopackApp.Run (library version 0.0.1298).
+[lib-csharp:14724] [04:47:52] [Information] Setting current process explicit AppUserModelID to 'velopack.IntLimiter'
+[stub:28756] [04:48:00] [INFO] --
+[stub:28756] [04:48:00] [INFO] Starting Velopack Stub (at "C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\Releases\\IntLimiter-win-Portable\\IntLimiter.exe")
+[stub:28756] [04:48:00] [INFO] Stub about to start Update.exe (C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable\Update.exe) with args: ["start", "--"]
+[stub:28756] [04:48:00] [INFO] Successfully started Update.exe
+[update:16980] [04:48:00] [INFO] --
+[update:16980] [04:48:00] [INFO] Starting Velopack Updater (0.0.1298)
+[update:16980] [04:48:00] [INFO]     Location: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable\Update.exe
+[update:16980] [04:48:00] [INFO]     CWD: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable
+[update:16980] [04:48:00] [INFO]     Verbose: false
+[update:16980] [04:48:00] [INFO]     Silent: false
+[update:16980] [04:48:00] [INFO]     Log File: None
+[update:16980] [04:48:00] [INFO] Command: Start
+[update:16980] [04:48:00] [INFO]     Wait: NoWait
+[update:16980] [04:48:00] [INFO]     Exe Name: None
+[update:16980] [04:48:00] [INFO]     Exe Args: None
+[update:16980] [04:48:00] [INFO] Auto-locating app manifest...
+[update:16980] [04:48:00] [INFO] About to launch: '"C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\Releases\\IntLimiter-win-Portable\\current\\IntLimiter.App.exe"' in dir '"C:\\Users\\kaanf\\OneDrive\\Masaüstü\\kfk\\IntLimiter\\Releases\\IntLimiter-win-Portable\\current"'
+[lib-csharp:28452] [04:48:00] [Information] Initialising WindowsVelopackLocator
+[lib-csharp:28452] [04:48:00] [Information] WindowsVelopackLocator: Update.exe in parent dir, Located valid manifest file at: C:\Users\kaanf\OneDrive\Masaüstü\kfk\IntLimiter\Releases\IntLimiter-win-Portable\current\sq.version
+[lib-csharp:28452] [04:48:00] [Information] Initialised WindowsVelopackLocator for IntLimiter v1.0.0
+[lib-csharp:28452] [04:48:00] [Information] Starting VelopackApp.Run (library version 0.0.1298).
+[lib-csharp:28452] [04:48:00] [Information] Setting current process explicit AppUserModelID to 'velopack.IntLimiter'
