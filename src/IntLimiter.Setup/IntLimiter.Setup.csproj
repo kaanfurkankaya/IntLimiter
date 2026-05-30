@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>IntLimiterSetup</AssemblyName>
+    <Product>IntLimiter Setup</Product>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\IntLimiter.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\IntLimiter.ico" />
+    <EmbeddedResource Include="Payload\IntLimiterPayload.zip"
+                      LogicalName="IntLimiterPayload.zip"
+                      Condition="Exists('Payload\IntLimiterPayload.zip')" />
+  </ItemGroup>
+
+</Project>
